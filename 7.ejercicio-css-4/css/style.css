@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --colorprincipal: rgba(255, 174, 0, 0.89);
+  --bordeseccion: 1px solid grey;
+  --columnasgridprimarias: 20rem 1fr;
+  --letra: verdana, helvetica;
+}
+ont body {
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header"
+    "main";
+}
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 8rem 1fr 8rem;
+  grid-template-rows: auto;
+  grid-template-areas: "figure" "section" "ul";
+  padding: 2rem;
+  border-bottom: 3px solid var(--colorprincipal);
+  align-content: center;
+}
+h1 {
+  font-family: var(--letra);
+  font-size: xx-large;
+  font-weight: bolder;
+}
+h3 {
+  font-family: var(--letra);
+  font-size: x-large;
+  font-weight: 450;
+}
+
+figure {
+  grid-area: figure;
+  padding-right: 1rem;
+}
+ul {
+  font-family: var(--letra);
+}
+img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+main {
+  grid-area: main;
+  padding-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+h2 {
+  color: var(--colorprincipal);
+  font-size: bold;
+  font-family: var(--letra);
+  font-style: oblique;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: var(--columnasgridprimarias);
+  grid-template-areas: "h2" "p";
+  border-bottom: var(--bordeseccion);
+  padding-bottom: 1.5rem;
+}
+.profile p {
+  text-align: left;
+  font-family: var(--letra);
+}
+.experiencia {
+  display: grid;
+  grid-template-columns: var(--columnasgridprimarias);
+  padding-top: 1.5rem;
+  border-bottom: var(--bordeseccion);
+}
+ol {
+  list-style: none;
+}
+
+.experiencia ol li section :nth-child(2) {
+  font-family: var(--letra);
+  font-style: oblique;
+  padding-bottom: 0.5rem;
+}
+.experiencia ol li section :last-child {
+  font-family: var(--letra);
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: var(--columnasgridprimarias);
+  padding-top: 1.5rem;
+  border-bottom: var(--bordeseccion);
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  list-style: none;
+}
+.skills ul li {
+  padding: 0.25rem 0;
+}
+.educacion {
+  display: grid;
+  grid-template-columns: var(--columnasgridprimarias);
+  padding-top: 1.5rem;
+  border-bottom: var(--bordeseccion);
+}
+
+.educacion ol li section :nth-child(2) {
+  font-family: var(--letra);
+  font-style: oblique;
+  padding-bottom: 0.5rem;
+}
+.educacion ol li section :last-child {
+  font-family: var(--letra);
+  text-align: left;
+  padding-bottom: 1.5rem;
+}

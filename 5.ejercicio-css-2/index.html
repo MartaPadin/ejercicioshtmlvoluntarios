@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio HTML 2</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header> Haga su pedido </header>
+  <main>
+    <form action="#">
+      <fieldset>
+        
+        <ul> 
+          <li> <p> Ingredientes </p> </li>
+         
+          <li> 
+            <label for="aguacate"> Aguacate </label>
+            <input type="checkbox" name="Aguacate" id="aguacate" />
+            <label for="tomate"> Tomate </label>
+            <input type="checkbox" name="tomate" id="tomate" />
+            <label for="cebolla"> Cebolla </label>
+            <input type="checkbox" name="cebolla" id="cebolla" />
+            <label for="queso"> Doble de Queso </label>
+            <input type="checkbox" name="queso" id="queso">
+          </li>
+          <li>  <p> Tamaño </p> </li>
+         
+          <li>
+            <label for="200gr"> 200gr </label>
+            <input type="radio" name="tamano" id="200gr" value="1">
+            <label for="500gr"> 500gr </label>
+            <input type="radio" name="tamano" id="500gr" value="2">
+            <label for="superbestia">Super Bestia </label>
+            <input type="radio" name="tamano" id="superbestia" value="3">
+          </li>
+        </ul>
+     
+      </fieldset>
+
+      <fieldset class="envio">
+        <legend> Datos de envio </legend>
+        <ul>
+          <li>
+            <label for="Nombre"> Nombre de Contacto </label>
+            <input type="text" name="Nombre" id="Nombre">
+          </li>
+          <li>
+            <label for="Direccion"> Dirección de envio </label>
+            <input type="text" name="Direccion" id="Direccion">
+          </li>
+          <li>
+            <label for="telefono"> Telefono de contacto </label>
+            <input type="tel" name="telefono" id="telefono">
+          </li>
+          <li>
+            <label for="indicaciones"> Indicaciones </label>
+            <textarea name="indicaciones" id="indicaciones" cols="50" rows="10"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      
+      <fieldset class="pago">
+        <legend> Métodos de pago </legend>       
+        <select name="Pago" id="Pago">
+          <option value="visa"> Tarjeta Bancaria </option>
+          <option value="bizum"> Bizum </option>
+          <option value="Paypal"> PayPal </option>
+          <option value="efectivo"> Efectivo </option>
+        </select>
+
+      </fieldset>
+      <button type="submit"> Enviar </button>
+    </form>
+  </main>
+</body>
+
+</html>
+

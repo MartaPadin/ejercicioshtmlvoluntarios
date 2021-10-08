@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: 20rem 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+}
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: black;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+header p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  margin: 1rem;
+}
+section {
+  grid-area: section;
+
+  padding-right: 1rem;
+}
+h3 {
+  grid-area: h3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: 450;
+  border-bottom: 1px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+img {
+  display: block;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  text-align: left;
+  padding-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+fieldset {
+  border: none;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bolder;
+}
+input {
+  background-color: grey;
+  width: 100%;
+  height: 2rem;
+}
+textarea {
+  background-color: grey;
+  width: 100%;
+  height: 8rem;
+  padding-bottom: 2rem;
+}
+button {
+  background: black;
+  color: white;
+  height: 2rem;
+  width: 5rem;
+  margin-top: 1rem;
+}
+@media (min-width: 600px) {
+  body {
+    grid-template-rows: 15rem 1fr;
+  }
+  header {
+    display: block;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 10rem;
+  }
+  h1 {
+    font-size: 50px;
+    padding-bottom: 0;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 0;
+  }
+  header p {
+    text-align: left;
+    padding-left: 0;
+  }
+  section {
+    margin: 1rem;
+    width: 60%;
+  }
+
+  figure {
+    display: block;
+  }
+  img {
+    float: right;
+    width: 15rem;
+    padding-left: 1rem;
+  }
+  section p {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  fieldset {
+    width: 60%;
+  }
+}
